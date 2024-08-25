@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+thead th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Propiedades de CSS</h1>
+    
+    <section id="propiedades">
+        <h2>Propiedades de CSS</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Propiedad</th>
+                    <th>Valor Inicial</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>color</td>
+                    <td>inherit</td>
+                    <td>Define el color del texto del elemento.</td>
+                </tr>
+                <tr>
+                    <td>font-family</td>
+                    <td>serif</td>
+                    <td>Especifica la fuente del texto del elemento.</td>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>medium</td>
+                    <td>Establece el tamaño de la fuente del texto.</td>
+                </tr>
+                <tr>
+                    <td>font-weight</td>
+                    <td>normal</td>
+                    <td>Determina el grosor del texto, como normal, bold, o valores numéricos (100, 400, 700).</td>
+                </tr>
+                <tr>
+                    <td>font-style</td>
+                    <td>normal</td>
+                    <td>Define el estilo del texto, como normal, italic, o oblique.</td>
+                </tr>
+                <tr>
+                    <td>font-variant</td>
+                    <td>normal</td>
+                    <td>Cambia el estilo de la fuente para variantes tipográficas como small-caps.</td>
+                </tr>
+                <tr>
+                    <td>font</td>
+                    <td>normal normal medium serif</td>
+                    <td>Agrupa propiedades de fuente en una sola declaración (font-style, font-variant, font-weight, font-size, line-height, font-family).</td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>left</td>
+                    <td>Alinea el texto dentro de su contenedor (left, right, center, justify).</td>
+                </tr>
+                <tr>
+                    <td>line-height</td>
+                    <td>normal</td>
+                    <td>Establece la altura de la línea, afectando el espaciado vertical entre líneas de texto.</td>
+                </tr>
+                <tr>
+                    <td>text-decoration</td>
+                    <td>none</td>
+                    <td>Añade decoraciones al texto, como underline, overline, line-through, o none.</td>
+                </tr>
+                <tr>
+                    <td>text-transform</td>
+                    <td>none</td>
+                    <td>Cambia la capitalización del texto (uppercase, lowercase, capitalize, none).</td>
+                </tr>
+                <tr>
+                    <td>vertical-align</td>
+                    <td>baseline</td>
+                    <td>Alinea el texto verticalmente en relación con su línea base (baseline, top, middle, bottom).</td>
+                </tr>
+                <tr>
+                    <td>text-indent</td>
+                    <td>0</td>
+                    <td>Define la cantidad de espacio para la indentación de la primera línea de un párrafo.</td>
+                </tr>
+                <tr>
+                    <td>letter-spacing</td>
+                    <td>normal</td>
+                    <td>Ajusta el espaciado entre caracteres (normal, 0.1em, etc.).</td>
+                </tr>
+                <tr>
+                    <td>word-spacing</td>
+                    <td>normal</td>
+                    <td>Modifica el espaciado entre palabras (normal, 0.2em, etc.).</td>
+                </tr>
+                <tr>
+                    <td>white-space</td>
+                    <td>normal</td>
+                    <td>Controla cómo se maneja el espacio en blanco dentro del elemento (normal, nowrap, pre, etc.).</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="decoracion">
+        <h2>Decoración</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Propiedades</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tamaño, Color y Decoración</td>
+                    <td>font-size, color, text-decoration</td>
+                    <td>- `font-size`: Establece el tamaño de la fuente del texto.<br>- `color`: Define el color del texto.<br>- `text-decoration`: Añade decoraciones al texto como `underline`, `overline`, `line-through`.</td>
+                </tr>
+                <tr>
+                    <td>Decoración Personalizada</td>
+                    <td>text-transform, letter-spacing, word-spacing, text-shadow</td>
+                    <td>- `text-transform`: Cambia la capitalización del texto (`uppercase`, `lowercase`, `capitalize`).<br>- `letter-spacing`: Ajusta el espaciado entre caracteres.<br>- `word-spacing`: Modifica el espaciado entre palabras.<br>- `text-shadow`: Añade sombra al texto para un efecto personalizado.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="anchura-altura">
+        <h2>Anchura y Altura</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Propiedades</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anchura y Altura</td>
+                    <td>width, height</td>
+                    <td>- `width`: Establece el ancho de un elemento.<br>- `height`: Define la altura de un elemento.</td>
+                </tr>
+                <tr>
+                    <td>Eliminar el Borde</td>
+                    <td>border, border-width</td>
+                    <td>- `border`: Elimina el borde de un elemento cuando se establece en `none`.<br>- `border-width`: Ajusta el grosor del borde. Para eliminarlo, se puede establecer en `0`.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
